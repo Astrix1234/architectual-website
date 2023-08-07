@@ -1,0 +1,29 @@
+$colors: (
+  'primary': #212121,
+  'secondary': #767676,
+  'third': #f5f4fa,
+  'accent': #2196f3,
+  'accentLight': #ffffff,
+  'accentDark': #000000,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fontFamilyMain: 'Lato', sans-serif;
+
+$fontSizeBigger: 20px;
+$fontSizeBig: 16px;
+$fontSizeSmall: 14px;
+$fontSizeTitle: 23px;
+$transBgColor: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transColor: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transFontWeight: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transBorder: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transFill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transVisibility: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transOpacity: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transTransform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$tabletDesktop: '(min-width: 768px)';

@@ -1,0 +1,25 @@
+.small-pictures {
+    max-width: 380px;
+    height: 380px;
+}
+
+.description-offer {
+    max-width: 380px;
+    height: 380px;
+    padding: 20px;
+    color: getColor("third");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+        margin-bottom: 18px;
+    }
+}
+
+@media #{$tabletDesktop} {
+    .content {
+        flex-direction: row;
+        height: 380px;
+    }
+}

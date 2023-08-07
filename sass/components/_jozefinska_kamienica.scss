@@ -1,0 +1,74 @@
+.one-project-link-menu a {
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.jozefinska-kamienica {
+    display: flex;
+    flex-direction: row;
+    background-color: getColor("secondary");
+    height: 380px;
+    margin-top: 50px;
+
+    &__main-img {
+        width: 380px;
+        height: 380px;
+        transition: $transTransform;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.03);
+        }
+    }
+
+    &__descr-img-small {
+        width: 380px;
+        height: 380px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__description {
+        color: getColor("third");
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: $fontSizeSmall;
+    }
+
+    &__img-list {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    &__img-item {
+        background-color: getColor("third");
+        width: 80px;
+        height: 70px;
+        transition: $transTransform;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.jozefinska-kamienica a {
+
+    &:hover,
+    &:focus {
+        cursor: zoom-in;
+    }
+}

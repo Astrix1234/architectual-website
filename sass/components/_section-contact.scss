@@ -1,0 +1,22 @@
+.map {
+    width: 100%;
+    height: 240px;
+}
+
+.description-contact {
+    color: getColor("third");
+    font-size: $fontSizeBigger;
+
+}
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: getColor("secondary");
+    height: 380px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border: 1px solid getColor("secondary");
+}

@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: getColor("secondary");
+    height: 760px;
+    margin-top: 50px;
+}
+
+.swiper {
+    max-width: 380px;
+    height: 380px;
+}
+
+.description-mainPage {
+    max-width: 380px;
+    height: 380px;
+    padding: 20px;
+    color: getColor("third");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+    color: getColor("primary");
+
+    &__item {
+        background-color: getColor("third");
+        font-size: 13px;
+        max-width: 70px;
+        height: 70px;
+        transition: $transTransform;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
+    }
+
+    &__item a {
+
+        &:hover,
+        &:focus {
+            cursor: zoom-in;
+        }
+    }
+}
+
+@media #{$tabletDesktop} {
+    .content {
+        flex-direction: row;
+        height: 380px;
+    }
+}

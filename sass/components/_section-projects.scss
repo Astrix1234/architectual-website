@@ -1,0 +1,28 @@
+.content-projects {
+    display: flex;
+    flex-direction: row;
+    background-color: getColor("secondary");
+    height: 380px;
+    margin-top: 50px;
+    padding: 10px 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__item {
+        background-color: getColor("third");
+        width: 110px;
+        height: 80px;
+        transition: $transTransform;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
+    }
+}

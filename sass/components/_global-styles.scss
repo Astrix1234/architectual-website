@@ -1,0 +1,17 @@
+.body {
+  font-family: $fontFamilyMain;
+  color: getColor('primary');
+}
+
+.container {
+  min-width: 320px;
+  max-width: 380px;
+  margin: 0 auto;
+
+}
+
+@media #{$tabletDesktop} {
+  .container {
+    max-width: 760px;
+  }
+}
