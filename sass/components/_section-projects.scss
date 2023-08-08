@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: row;
     background-color: getColor("secondary");
-    height: 380px;
-    margin-top: 50px;
-    padding: 10px 15px;
+    height: 760px;
+    margin-top: 10px;
+    padding: 10px 0;
 }
 
 .gallery {
@@ -12,17 +12,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
+    width: 320px;
+    margin: 0 auto;
 
     &__item {
         background-color: getColor("third");
-        width: 110px;
+        width: 100px;
         height: 80px;
         transition: $transTransform;
 
         &:hover,
         &:focus {
             transform: scale(1.05);
+        }
+    }
+}
+
+@media #{$tabletDesktop} {
+    .content-projects {
+        flex-direction: row;
+        height: 380px;
+        margin-top: 50px;
+        padding: 10px 15px;
+    }
+
+    .gallery {
+        width: 100%;
+
+        &__item {
+            width: 110px;
+            height: 80px;
         }
     }
 }

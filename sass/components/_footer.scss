@@ -1,6 +1,17 @@
+.footer-container {
+    background-color: getColor("third");
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .copyrights {
     text-align: center;
     color: getColor("secondary");
     font-size: 12px;
-    margin-top: 10px;
+}
+
+@media #{$tabletDesktop} {
+    .footer-container {
+        background-color: transparent;
+    }
 }

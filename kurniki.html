@@ -34,29 +34,29 @@
     </header>
     <section>
         <div class="container">
-            <div class="kurniki">
-                <div class="kurniki__main-img">
+            <div class="project">
+                <div class="project__main-img">
                     <a href="images/kurniki/22.jpg"><img src="images/kurniki/22_small.jpg"
                             alt="building from outside"></a>
                 </div>
-                <div class="kurniki__descr-img-small">
-                    <div class="kurniki__description">
+                <div class="project__descr-img-small">
+                    <div class="project__description">
                         <p>BUDYNEK MIESZKALNO – USŁUGOWY</p>
-                        <p class="kurniki__text">Lokalizacja: Kraków, ul. Kurniki 9, dz. nr 141, obr. 8, jedn. ewid.
+                        <p class="project__text">Lokalizacja: Kraków, ul. Kurniki 9, dz. nr 141, obr. 8, jedn. ewid.
                             Śródmieście</p>
-                        <p class="kurniki__text">GENUS Grupa Deweloperska Sp. z o.o.</p>
+                        <p class="project__text">GENUS Grupa Deweloperska Sp. z o.o.</p>
                     </div>
-                    <ul class="kurniki__img-list">
-                        <li class="kurniki__img-item"><a href="images/kurniki/arkady.jpg"><img
+                    <ul class="project__img-list">
+                        <li class="project__img-item"><a href="images/kurniki/arkady.jpg"><img
                                     src="images/kurniki/arkady_sall.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="kurniki__img-item"><a href="images/kurniki/arkady_dalsze.jpg"><img
+                        <li class="project__img-item"><a href="images/kurniki/arkady_dalsze.jpg"><img
                                     src="images/kurniki/arkady_dalsze_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="kurniki__img-item"><a href="images/kurniki/arkady_front.jpg"><img
+                        <li class="project__img-item"><a href="images/kurniki/arkady_front.jpg"><img
                                     src="images/kurniki/arkady_front_small.jpg" alt="building from outsider"></a>
                         </li>
-                        <li class="kurniki__img-item"><a href="images/kurniki/back.jpg"><img
+                        <li class="project__img-item"><a href="images/kurniki/back.jpg"><img
                                     src="images/kurniki/back_small.jpg" alt="building from outside"></a></li>
                     </ul>
 
@@ -65,16 +65,49 @@
         </div>
     </section>
     <footer>
-        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        <div class="container footer-container">
+            <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        </div>
     </footer>
+    <div class="container footer-container">
+        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+    </div>
+    </footer>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+        <button class="mobil-menu__menu-toggle js-close-menu">
+            <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+                <use href="images/clouse.svg#icon-close"></use>
+            </svg>
+        </button>
+        <menu class="mobile-nav">
+            <li>
+                <a class="mobile-nav__link" href="index.html">o firmie</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="offer.html">oferta</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link mobile-nav__link--accent" href="projects.html">projekty</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="contact.html">kontakt</a>
+            </li>
+        </menu>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
         integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/lightbox.js"></script>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

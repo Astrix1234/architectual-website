@@ -34,41 +34,41 @@
     </header>
     <section>
         <div class="container">
-            <div class="studencka">
-                <div class="studencka__main-img">
+            <div class="project">
+                <div class="project__main-img">
                     <a href="images/studencka/DSC_8847 pop.jpg"><img src="images/studencka/DSC_8847 pop_small.jpg"
                             alt="building from outside"></a>
                 </div>
-                <div class="studencka__descr-img-small">
-                    <div class="jozefinska-kamienica__description">
+                <div class="project__descr-img-small">
+                    <div class="project__description">
                         <p>PRZEBUDOWA KAMIENICY</p>
-                        <p class="studencka__text">Lokalizacja: Kraków, ul. Studencka 25, dz. nr 58,obr. 61, jedn.
+                        <p class="project__text">Lokalizacja: Kraków, ul. Studencka 25, dz. nr 58,obr. 61, jedn.
                             ewid. Śródmieście</p>
-                        <p class="jozefinska-kamienica__text">Inwestor: Studencka 25 Sp. z o. o.</p>
+                        <p class="project__text">Inwestor: Studencka 25 Sp. z o. o.</p>
                     </div>
-                    <ul class="studencka__img-list">
-                        <li class="cianowice__img-item"><a href="images/studencka/04_big2.jpg"><img
+                    <ul class="project__img-list">
+                        <li class="project__img-item"><a href="images/studencka/04_big2.jpg"><img
                                     src="images/studencka/04_big2_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/04_big2_oswietlenie.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/04_big2_oswietlenie.jpg"><img
                                     src="images/studencka/04_big2_oswietlenie_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/20005.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/20005.jpg"><img
                                     src="images/studencka/20005_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/20006.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/20006.jpg"><img
                                     src="images/studencka/20006_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/detal.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/detal.jpg"><img
                                     src="images/studencka/detal_small.jpg" alt="detail"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/hall_v2.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/hall_v2.jpg"><img
                                     src="images/studencka/hall_v2_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/hall_v3.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/hall_v3.jpg"><img
                                     src="images/studencka/hall_v3_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="studencka__img-item"><a href="images/studencka/tile_d3.jpg"><img
+                        <li class="project__img-item"><a href="images/studencka/tile_d3.jpg"><img
                                     src="images/studencka/tile_d3_small.jpg" alt="tile"></a>
                         </li>
                     </ul>
@@ -77,16 +77,45 @@
         </div>
     </section>
     <footer>
-        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        <div class="container footer-container">
+            <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        </div>
     </footer>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+        <button class="mobil-menu__menu-toggle js-close-menu">
+            <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+                <use href="images/clouse.svg#icon-close"></use>
+            </svg>
+        </button>
+        <menu class="mobile-nav">
+            <li>
+                <a class="mobile-nav__link" href="index.html">o firmie</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="offer.html">oferta</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link mobile-nav__link--accent" href="projects.html">projekty</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="contact.html">kontakt</a>
+            </li>
+        </menu>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
         integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/lightbox.js"></script>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: getColor("secondary");
     height: 760px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .swiper {
@@ -29,7 +29,7 @@
     &__item {
         background-color: getColor("third");
         font-size: 13px;
-        max-width: 70px;
+        width: 70px;
         height: 70px;
         transition: $transTransform;
 
@@ -52,5 +52,6 @@
     .content {
         flex-direction: row;
         height: 380px;
+        margin-top: 50px;
     }
 }

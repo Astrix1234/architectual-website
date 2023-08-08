@@ -34,53 +34,53 @@
     </header>
     <section>
         <div class="container">
-            <div class="zacisze">
-                <div class="zacisze__main-img">
+            <div class="project">
+                <div class="project__main-img">
                     <a href="images/zacisze/IMG_0251.jpg"><img src="images/zacisze/IMG_0251_small.jpg"
                             alt="building from outside"></a>
                 </div>
-                <div class="zacisze__descr-img-small">
-                    <div class="zacisze__description">
+                <div class="project__descr-img-small">
+                    <div class="project__description">
                         <p>PRZEBUDOWA I NADBUDOWA KAMIENICY</p>
-                        <p class="zacisze__text">Lokalizacja: Kraków, Zacisze 4, dz. nr 83/4,
+                        <p class="project__text">Lokalizacja: Kraków, Zacisze 4, dz. nr 83/4,
                             obr. 120, jedn. ewid. Śródmieście</p>
-                        <p class="zacisze__text">Inwestor: GENUS Grupa Deweloperska 2 Sp. z o.o. Kraków Sp. kom.</p>
+                        <p class="project__text">Inwestor: GENUS Grupa Deweloperska 2 Sp. z o.o. Kraków Sp. kom.</p>
                     </div>
-                    <ul class="zacisze__img-list">
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0143.jpg"><img
+                    <ul class="project__img-list">
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0143.jpg"><img
                                     src="images/zacisze/IMG_0143_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0157.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0157.jpg"><img
                                     src="images/zacisze/IMG_0157_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0166.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0166.jpg"><img
                                     src="images/zacisze/IMG_0166_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0167.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0167.jpg"><img
                                     src="images/zacisze/IMG_0167_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0170.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0170.jpg"><img
                                     src="images/zacisze/IMG_0170_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0173.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0173.jpg"><img
                                     src="images/zacisze/IMG_0173_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0185.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0185.jpg"><img
                                     src="images/zacisze/IMG_0185_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0199.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0199.jpg"><img
                                     src="images/zacisze/IMG_0199_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0200.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0200.jpg"><img
                                     src="images/zacisze/IMG_0200_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0207.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0207.jpg"><img
                                     src="images/zacisze/IMG_0207_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0211.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0211.jpg"><img
                                     src="images/zacisze/IMG_0211_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="zacisze__img-item"><a href="images/zacisze/IMG_0213.jpg"><img
+                        <li class="project__img-item"><a href="images/zacisze/IMG_0213.jpg"><img
                                     src="images/zacisze/IMG_0213_small.jpg" alt="building inside"></a>
                         </li>
 
@@ -91,16 +91,45 @@
         </div>
     </section>
     <footer>
-        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        <div class="container footer-container">
+            <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        </div>
     </footer>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+        <button class="mobil-menu__menu-toggle js-close-menu">
+            <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+                <use href="images/clouse.svg#icon-close"></use>
+            </svg>
+        </button>
+        <menu class="mobile-nav">
+            <li>
+                <a class="mobile-nav__link " href="index.html">o firmie</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="offer.html">oferta</a>
+            </li>
+            <li>
+                <a class="mobile-nav__linkmobile-nav__link--accent" href="projects.html">projekty</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="contact.html">kontakt</a>
+            </li>
+        </menu>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
         integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/lightbox.js"></script>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

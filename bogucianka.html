@@ -34,51 +34,81 @@
     </header>
     <section>
         <div class="container">
-            <div class="bogucianka">
-                <div class="bogucianka__main-img">
+            <div class="project">
+                <div class="project__main-img">
                     <a href="images/Tyniec domki/widok1_2018_podjazdy_fix.jpg"><img
                             src="images/Tyniec domki/widok1_2018_podjazdy_fix_small.jpg"
                             alt="buildings from outside"></a>
                 </div>
-                <div class="bogucianka__descr-img-small">
-                    <div class="bogucianka__description">
+                <div class="project__descr-img-small">
+                    <div class="project__description">
                         <p>DOM ZESPÓŁ DOMÓW JEDNORODZINNYCH
                             W ZABUDOWIE BLIŹNIACZEJ
                         </p>
-                        <p class="bogucianka__text">adaptacja projektu mgr inż. arch. Barbary Adamczyk</p>
-                        <p class="bogucianka__text">Lokalizacja: Kraków, ul. Bogucianka 158 – 158A, 160 – 160A</p>
-                        <p class="bogucianka__text">Inwestor: GENUS Grupa Deweloperska 2 Sp. z o.o. Centrum Sp.
+                        <p class="project__text">adaptacja projektu mgr inż. arch. Barbary Adamczyk</p>
+                        <p class="project__text">Lokalizacja: Kraków, ul. Bogucianka 158 – 158A, 160 – 160A</p>
+                        <p class="project__text">Inwestor: GENUS Grupa Deweloperska 2 Sp. z o.o. Centrum Sp.
                             komandytowa</p>
                     </div>
-                    <ul class="bogucianka__img-list">
-                        <li class="bogucianka__img-item"><a href="images/Tyniec domki/widok2.RGB_color.jpg"><img
+                    <ul class="project__img-list">
+                        <li class="project__img-item"><a href="images/Tyniec domki/widok2.RGB_color.jpg"><img
                                     src="images/Tyniec domki/widok2.RGB_color_small.jpg"
                                     alt="buildings from outside"></a>
                         </li>
-                        <li class="bogucianka__img-item"><a href="images/Tyniec domki/widok3.RGB_color.jpg"><img
+                        <li class="project__img-item"><a href="images/Tyniec domki/widok3.RGB_color.jpg"><img
                                     src="images/Tyniec domki/widok3.RGB_color_small.jpg"
                                     alt="buildings from outside"></a>
                         </li>
-                        <li class="bogucianka__img-item"><a href="images/Tyniec domki/top.RGB_color_cut.jpg"><img
+                        <li class="project__img-item"><a href="images/Tyniec domki/top.RGB_color_cut.jpg"><img
                                     src="images/Tyniec domki/top.RGB_color_cut_small.jpg"
                                     alt="buildings from outside, bird's eye view"></a>
                         </li>
+                        <li class="project__img-item--additional"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        <div class="container footer-container">
+            <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        </div>
     </footer>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+        <button class="mobil-menu__menu-toggle js-close-menu">
+            <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+                <use href="images/clouse.svg#icon-close"></use>
+            </svg>
+        </button>
+        <menu class="mobile-nav">
+            <li>
+                <a class="mobile-nav__link" href="index.html">o firmie</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="offer.html">oferta</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link mobile-nav__link--accent" href="projects.html">projekty</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="contact.html">kontakt</a>
+            </li>
+        </menu>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
         integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/lightbox.js"></script>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

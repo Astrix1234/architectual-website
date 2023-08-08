@@ -1,50 +1,85 @@
 .logo {
     display: block;
-    width: 300px;
+    width: 150px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin: 0 auto;
-    font-size: $fontSizeTitle;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: getColor("secondary");
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-
-    &__item {
-        transition: $transTransform, $transFontWeight;
-
-        &:hover,
-        &:focus {
-            transform: scale(1.05);
-            font-weight: 600;
-        }
-
-        &--accent {
-            font-weight: 600;
-
-            &:hover,
-            &:focus {
-                transform: none;
-            }
-        }
-
-        &--accent a {
-            font-weight: 600;
-
-            &:hover,
-            &:focus {
-                cursor: context-menu;
-            }
-        }
-    }
+    display: none;
 }
 
 hr {
-    color: #9e9e9e;
+    display: none;
+}
+
+.menu-toggle {
+    z-index: 10;
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+
+    &__icon {
+        fill: getColor("forth");
+    }
+}
+
+@media #{$tabletDesktop} {
+    .logo {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        margin: 0 auto;
+        font-size: $fontSizeTitle;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: getColor("secondary");
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+        &__item {
+            transition: $transTransform, $transFontWeight;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.05);
+                font-weight: 600;
+            }
+
+            &--accent {
+                font-weight: 600;
+
+                &:hover,
+                &:focus {
+                    transform: none;
+                }
+            }
+
+            &--accent a {
+                font-weight: 600;
+
+                &:hover,
+                &:focus {
+                    cursor: context-menu;
+                }
+            }
+        }
+    }
+
+    hr {
+        display: block;
+        color: #9e9e9e;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
 }

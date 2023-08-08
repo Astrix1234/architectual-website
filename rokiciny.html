@@ -34,48 +34,48 @@
     </header>
     <section>
         <div class="container">
-            <div class="rokiciny">
-                <div class="rokiciny__main-img">
+            <div class="project">
+                <div class="project__main-img">
                     <a href="images/rokiciny/SDC11605.JPG"><img src="images/rokiciny/SDC11605_small.jpg"
                             alt="building from outside"></a>
                 </div>
-                <div class="rokiciny__descr-img-small">
-                    <div class="rokiciny__description">
+                <div class="project__descr-img-small">
+                    <div class="project__description">
                         <p>SALA GIMNASTYCZNA PRZY SZKOLE PODSTAWOWEJ</p>
-                        <p class="rokiciny__text">Lokalizacja: Rokiciny Podhalańskie, gmina Raba Wyżna</p>
-                        <p class="rokiciny__text">Inwestor: Wójt Gminy Raba Wyżna</p>
+                        <p class="project__text">Lokalizacja: Rokiciny Podhalańskie, gmina Raba Wyżna</p>
+                        <p class="project__text">Inwestor: Wójt Gminy Raba Wyżna</p>
                     </div>
-                    <ul class="rokiciny__img-list">
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11601.jpg"><img
+                    <ul class="project__img-list">
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11601.jpg"><img
                                     src="images/rokiciny/SDC11601_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11602.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11602.jpg"><img
                                     src="images/rokiciny/SDC11602_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11603.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11603.jpg"><img
                                     src="images/rokiciny/SDC11603_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11604.JPG"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11604.JPG"><img
                                     src="images/rokiciny/SDC11604_small.jpg" alt="building from outside"></a></li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11606.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11606.jpg"><img
                                     src="images/rokiciny/SDC11606_small.jpg" alt="building from outside"></a></li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11607.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11607.jpg"><img
                                     src="images/rokiciny/SDC11607_small.jpg" alt="building from outside"></a></li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11608.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11608.jpg"><img
                                     src="images/rokiciny/SDC11608_small.jpg" alt="building from outside"></a></li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11609.JPG"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11609.JPG"><img
                                     src="images/rokiciny/SDC11609_small.jpg" alt="building from outside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11610.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11610.jpg"><img
                                     src="images/rokiciny/SDC11610_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11612.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11612.jpg"><img
                                     src="images/rokiciny/SDC11612_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11613.jpg"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11613.jpg"><img
                                     src="images/rokiciny/SDC11613_small.jpg" alt="building inside"></a>
                         </li>
-                        <li class="rokiciny__img-item"><a href="images/rokiciny/SDC11614.JPG"><img
+                        <li class="project__img-item"><a href="images/rokiciny/SDC11614.JPG"><img
                                     src="images/rokiciny/SDC11614_small.jpg" alt="building inside"></a>
                         </li>
 
@@ -86,16 +86,45 @@
         </div>
     </section>
     <footer>
-        <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        <div class="container footer-container">
+            <p class="copyrights">&#169; 2023 - SARTR PROJEKT. All Rights Reserved.</p>
+        </div>
     </footer>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+        <button class="mobil-menu__menu-toggle js-close-menu">
+            <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+                <use href="images/clouse.svg#icon-close"></use>
+            </svg>
+        </button>
+        <menu class="mobile-nav">
+            <li>
+                <a class="mobile-nav__link" href="index.html">o firmie</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="offer.html">oferta</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link mobile-nav__link--accent" href="projects.html">projekty</a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="contact.html">kontakt</a>
+            </li>
+        </menu>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
         integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/lightbox.js"></script>
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
