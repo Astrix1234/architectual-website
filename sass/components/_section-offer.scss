@@ -1,12 +1,16 @@
 .small-pictures {
-    max-width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .description-offer {
-    max-width: 380px;
+    width: 320px;
     height: 380px;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
     color: getColor("third");
     display: flex;
     flex-direction: column;
@@ -18,8 +22,14 @@
 }
 
 @media #{$tabletDesktop} {
-    .content {
-        flex-direction: row;
+    .small-pictures {
+        width: 380px;
         height: 380px;
+        margin-top: 0;
+    }
+
+    .description-offer {
+        width: 380px;
+        padding: 20px;
     }
 }
