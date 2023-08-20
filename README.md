@@ -1,4 +1,4 @@
-# My architectonic website
+# My architectural website
 
 ![Desktop preview](desktop-preview.jpg)
 
