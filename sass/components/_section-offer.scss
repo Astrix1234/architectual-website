@@ -19,6 +19,17 @@
     &__item {
         margin-bottom: 18px;
     }
+
+    &__link {
+        text-decoration: underline;
+        transition: color 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: #d5d5d5;
+        }
+    }
+
 }
 
 @media #{$tabletDesktop} {
