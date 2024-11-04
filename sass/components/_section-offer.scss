@@ -32,6 +32,11 @@
 
 }
 
+.description-offer h2 {
+    font-size: $fontSizeBig;
+    font-weight: 400;
+}
+
 @media #{$tabletDesktop} {
     .small-pictures {
         width: 380px;

@@ -25,6 +25,11 @@
     justify-content: space-between;
 }
 
+.description-mainPage h1 {
+    font-size: $fontSizeBig;
+    font-weight: 400;
+}
+
 .awards {
     display: flex;
     justify-content: space-between;
